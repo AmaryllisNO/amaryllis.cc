@@ -1,0 +1,121 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+/* reset styles */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #131216;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgray;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+/* headings */
+/* utils */
+.maintenance {
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.maintenance__logo {
+  max-width: 300px;
+  margin-bottom: 2em;
+}
+
+.maintenance__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance__listcontainer {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.maintenance__listitem {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.maintenance__listitemseperator {
+  display: inline-block;
+  height: 2px;
+  width: 10px;
+  margin: 1em;
+  background-color: white;
+}
+
+.maintenance__disclaimer {
+  margin: auto;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+.maintenance {
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+
+  &__logo {
+    max-width: 300px;
+    margin-bottom: 2em;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    &container {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    &item {
+      align-items: center;
+      display: inline;
+      font-family: "Crimson Text", serif;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &seperator {
+        display: inline-block;
+
+        height: 2px;
+        width: 10px;
+        margin: 1em;
+        background-color: white;
+      }
+    }
+  }
+
+  &__disclaimer {
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
