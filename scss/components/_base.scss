@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #14151b;
-  color: white;
+  color: map-get($colours, offWhite);
   font-family: Arial, Helvetica, sans-serif;
 }
 

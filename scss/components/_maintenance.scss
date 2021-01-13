@@ -1,12 +1,13 @@
 .maintenance {
   max-width: 1500px;
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
 
   &__logo {
     display: blocK;
-    max-width: 300px;
+    max-width: 260px;
     margin: auto;
+    margin-bottom: 1em;
     display: flex;
     align-items: center;
   }
@@ -56,15 +57,16 @@
     &item {
       align-items: center;
       display: inline;
-      font-family: "Crimson Text", serif;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-family: "Amiri", serif;
+      font-weight: lighter;
+      font-size: 1.2em;
+      text-transform: lowercase;
 
       &seperator {
         display: inline-block;
 
         height: 2px;
-        width: 10px;
+        width: 30px;
         margin: 1em;
         background-color: white;
       }
@@ -73,11 +75,31 @@
 
   &__disclaimer {
     margin: auto;
-    margin-top: 2em;
+    margin-top: 1em;
+    max-width: 340px;
+    text-align: center;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: larger;
+  }
+
+  &__social {
+    margin: 0 auto;
+    padding: 2rem 0 2rem 1rem;
+    display: flex;
+    justify-content: center;
+
+    &list {
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    &item {
+      display: inline-block;
+      margin: 1rem;
+    }
   }
 }
 
