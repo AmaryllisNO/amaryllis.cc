@@ -1,5 +1,6 @@
 /* imports */
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* reset styles */
 *,
 *::before,
@@ -15,7 +16,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #131216;
+  background-color: #14151b;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -53,20 +54,55 @@ button {
   max-width: 1500px;
   margin: auto;
   margin-top: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .maintenance__logo {
+  display: blocK;
   max-width: 300px;
-  margin-bottom: 2em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maintenance__headingcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 250px;
+  margin: 0 auto;
+  position: relative;
+  left: -20px;
+  margin-bottom: 20px;
+}
+
+.maintenance__dash {
+  display: inline-block;
+  -webkit-transform: rotateZ(110deg);
+          transform: rotateZ(110deg);
+  height: 2px;
+  width: 25px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  top: -1px;
+}
+
+.maintenance__dash--condense {
+  right: -10px;
+}
+
+.maintenance__heading {
+  display: inline-block;
+  font-family: "Amiri", serif;
+  font-weight: normal;
+  margin: auto;
 }
 
 .maintenance__list {
@@ -117,5 +153,22 @@ button {
           justify-content: center;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .maintenance {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .maintenance__list {
+    display: block;
+  }
+  .maintenance__listitem {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
