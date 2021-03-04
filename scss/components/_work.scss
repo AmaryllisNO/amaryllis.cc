@@ -1,0 +1,234 @@
+.worksection {
+  display: block;
+}
+
+.workcontainer {
+  max-height: $workContainerHeight;
+  margin-bottom: $pageSpacing * 2;
+
+  &::after {
+    content: url(../../assets/svg/divider.svg);
+    display: block;
+    position: relative;
+    margin-top: -$workContainerHeight * 1.05;
+    margin-bottom: 100px;
+    margin-left: -40px;
+    max-width: 20px;
+  }
+
+  &--x2height {
+    max-height: $workContainerHeight * 2;
+    &::after {
+      content: url(../../assets/svg/divider-x2.svg);
+      display: block;
+      position: relative;
+      bottom: $pageSpacing * 18;
+      margin-left: -43px;
+      height: $workContainerHeight * 2;
+    }
+  }
+
+  &--art {
+    &::after {
+      height: $workContainerHeight * 2;
+    }
+  }
+
+  &__heading {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: -10px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 2em;
+    color: map-get($colours, grayer);
+  }
+
+  &__contents {
+    display: grid;
+    grid-template-columns: 30px minmax(auto, 33%) 30px minmax(auto, 33%) 30px minmax(
+        auto,
+        33%
+      );
+    // margin-bottom: $pageSpacing * 3;
+
+    min-height: 250px;
+  }
+
+  &__work {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 10px;
+    transition: 0.2s;
+    filter: grayscale(100%);
+
+    &:hover {
+      transition: 0.2s;
+      filter: grayscale(0);
+    }
+
+    &--music iframe {
+      min-height: 250px;
+      min-width: 450px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__worktitle {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-orientation: sideways;
+    writing-mode: vertical-lr;
+    font-size: 0.76em;
+    text-align: right;
+    transform: rotateZ(180deg);
+    word-spacing: 4px;
+  }
+
+  &__worklink {
+    display: inline-block;
+    margin: 0;
+  }
+
+  &__workimage {
+    position: relative;
+    transition: 0.5s;
+    max-height: 250px;
+    object-fit: cover;
+    padding: $pageSpacing;
+    padding-top: 0;
+    // padding-bottom: $pageSpacing * 2;
+    // min-width: 430px;
+    &--sword {
+      object-fit: cover;
+    }
+
+    &--smaller {
+      transform: scale(0.7);
+      top: -30px;
+      margin-bottom: $pageSpacing * 4;
+      min-width: 90px;
+      object-fit: fill;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(0.75);
+      }
+    }
+
+    /* &:hover {
+      position: static;
+      transform: scale(1.05);
+    } */
+  }
+}
+
+.workcontainer--art .workcontainer__work {
+  filter: grayscale(50%);
+}
+
+.workcontainer--art .workcontainer__work:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1650px) {
+  .workcontainer {
+    margin-bottom: $pageSpacing * 5;
+
+    &__contents {
+      min-height: 220px;
+      max-height: 180px;
+      object-fit: contain;
+    }
+
+    &::after {
+      content: url(../../assets/svg/divider-mid.svg);
+      display: block;
+      position: relative;
+      margin-top: -$workContainerHeight * 1.2;
+      margin-left: -40px;
+    }
+
+    &--x2height {
+      margin-bottom: 0;
+      &::after {
+        content: url(../../assets/svg/divider-mid-x2.svg);
+        display: block;
+        position: relative;
+        margin-top: -$workContainerHeight * 1.2;
+        margin-left: -40px;
+      }
+    }
+
+    &__work {
+      &image {
+        max-height: 180px;
+        padding: 0;
+      }
+
+      &--music iframe {
+        min-width: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .workcontainer {
+    max-height: none;
+    min-height: min-content;
+
+    &::after {
+      content: none;
+    }
+
+    &--x2height {
+      &::after {
+        content: none;
+      }
+    }
+
+    &--art {
+      margin-bottom: $pageSpacing * 4;
+    }
+
+    &__work {
+      &--music iframe {
+        min-width: auto;
+        max-width: 230px;
+      }
+    }
+
+    &__heading {
+      font-size: 1.4em;
+    }
+
+    &__contents {
+      max-height: none;
+      grid-template-columns: 30px minmax(auto, 100%);
+      row-gap: 15px;
+      grid-template-rows: auto;
+    }
+
+    &__worktitle {
+      font-size: 0.67em;
+    }
+
+    &__workimage {
+      &--smaller {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+iframe {
+  border: 0;
+}

@@ -1,0 +1,11 @@
+.bottom {
+  min-height: $pageSpacing * 20;
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+  align-items: flex-end;
+
+  &__icon {
+    margin-bottom: $pageSpacing * 5;
+  }
+}

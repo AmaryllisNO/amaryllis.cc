@@ -1,4 +1,10 @@
 .fab {
   font-size: 2em;
   color: map-get($colours, offWhite);
+  transition: 0.2s;
+
+  &:hover {
+    color: white;
+    filter: drop-shadow(20px);
+  }
 }

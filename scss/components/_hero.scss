@@ -1,0 +1,100 @@
+.hero {
+  padding: $pageSpacing * 3 $pageSpacing $pageSpacing $pageSpacing * 4;
+  display: inline-flex;
+  width: 100%;
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__right {
+    padding-left: $pageSpacing * 3;
+  }
+
+  &__logo {
+    display: inline-block;
+    max-width: 200px;
+  }
+
+  &__heading {
+    margin-top: $pageSpacing * 3;
+    margin-bottom: 0;
+    font-size: 3em;
+    display: block;
+
+    &--cv {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  &__description {
+    display: block;
+    font-size: 1.3em;
+    font-family: "Amiri";
+    text-transform: lowercase;
+    padding-left: $pageSpacing * 1.6;
+    position: relative;
+    bottom: 30px;
+    color: map-get($colours, grayer);
+  }
+
+  &--about {
+    margin-bottom: -$pageSpacing * 1;
+    padding-top: $pageSpacing;
+  }
+
+  @media only screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    padding: $pageSpacing;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+    &__right {
+      padding-left: 0;
+      margin-top: -7em;
+      margin-bottom: 0.5em;
+    }
+
+    &__left {
+      margin-top: 2em;
+    }
+
+    &__heading {
+      font-size: 1.6em;
+      padding-right: $pageSpacing * 1;
+      display: flex;
+      align-items: baseline;
+      vertical-align: center;
+      justify-content: center;
+
+      &--aboutme {
+        margin-left: -$pageSpacing * 7;
+        margin-bottom: 1px;
+      }
+
+      &--cv {
+        padding: 0;
+        margin-left: -40px;
+      }
+    }
+
+    &__description {
+      margin-top: 2em;
+      font-size: 1.1em;
+      padding: 0 5.5em 0 5.5em;
+      text-align: center;
+    }
+
+    &--about {
+      margin-top: $pageSpacing * 10;
+      height: auto;
+    }
+  }
+}
+
+.hero--cv {
+  margin-top: $pageSpacing * 7;
+}

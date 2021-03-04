@@ -1,0 +1,15 @@
+.contact {
+  padding-left: $pageSpacing * 8;
+  font-family: "Lato", sans-serif;
+  &__socialitem {
+    display: inline-block;
+    padding-right: $pageSpacing;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    padding-left: $pageSpacing * 3;
+    padding-right: $pageSpacing;
+  }
+}

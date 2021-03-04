@@ -1,70 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>// AMARYLLIS</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon"
-      type="image/png"
-      href="./img/amathirdgen.png">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-</head>
-<body>
-    <div class="maintenance">
-        <img src="./img/amaryllis_logo.svg" alt="Amaryllis Logo" class="maintenance__logo" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>// Amaryllis</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <header class="header">
+        <a class="header__logolink" href="index.html"
+          ><img
+            src="assets/svg/amaryllis-text-logo-2021.svg"
+            class="header__logo"
+            alt="amaryllis text logo"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__listitem">
+              <a class="nav__mainlink" id="mainlink-work">Work</a>
+              <ul class="nav__sublist" id="worklist">
+                <li class="nav__sublistitem">
+                  <a href="index.html#websites">Websites</a>
+                </li>
+                <li class="nav__sublistitem">
+                  <a href="index.html#logos-branding">Logos / Branding</a>
+                </li>
+                <li class="nav__sublistitem">
+                  <a href="index.html#art">art</a>
+                </li>
+                <li class="nav__sublistitem">
+                  <a href="index.html#music">music</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__listitem">
+              <a class="nav__mainlink" id="mainlink-about">About</a>
+              <ul class="nav__sublist" id="aboutlist">
+                <li class="nav__sublistitem">
+                  <a href="about.html">About Me</a>
+                </li>
+                <li class="nav__sublistitem">
+                  <a href="about.html#cv">CV</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__listitem">
+              <a href="contact.html" class="nav__mainlink">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <div class="maintenance__headingcontainer">
-            <span class="maintenance__dash maintenance__dash--condense"></span>
-            <span class="maintenance__dash"></span>
-            <h1 class="maintenance__heading">AMARYLLIS</h1>
-        </div>
+      <footer class="footer">
+        <small class="footer__copyright"
+          >©2021 Amaryllis. All rights reserved.
+        </small>
+      </footer>
+    </aside>
 
-        <div class="maintenance__listcontainer">
-            <ul class="maintenance__list">
-                <li class="maintenance__listitem">Music Producer</li>
-                <span class="maintenance__listitemseperator"></span>
-    
-                <li class="maintenance__listitem">Concept Artist</li>
-                <span class="maintenance__listitemseperator"></span>
-    
-                <li class="maintenance__listitem">Front-End Developer</li>
-                <span class="maintenance__listitemseperator"></span>
-    
-                <li class="maintenance__listitem">Graphic Designer</li>
+    <div class="anchorbar">
+      <a href="./index.html" class="anchorbar__logolink">
+        <img
+          src="assets/svg/amaryllis-text-logo-2021.svg"
+          class="anchorbar__logo"
+          alt="amaryllis text logo"
+        />
+      </a>
+
+      <button class="anchorbar__hamburger" id="hamburger">
+        <img
+          src="./assets/svg/hamburger.svg"
+          alt="hamburger"
+          class="anchorbar__hamburgerimg"
+        />
+      </button>
+    </div>
+    <div class="mobilenav" id="mobilenav">
+      <a href="./index.html" class="mobilenav__logolink">
+        <img
+          src="assets/svg/amaryllis-text-logo-2021.svg"
+          class="mobilenav__logo"
+          alt="amaryllis text logo"
+        />
+      </a>
+
+      <nav class="nav" id="innermobilenav">
+        <ul class="nav__list">
+          <li class="nav__listitem">
+            <a class="nav__mainlink" id="mobilemainlink-work">Work</a>
+            <ul class="nav__sublist" id="mobileworklist">
+              <li class="nav__sublistitem">
+                <a href="index.html#websites">Websites</a>
+              </li>
+              <li class="nav__sublistitem">
+                <a href="index.html#logos-branding">Logos / Branding</a>
+              </li>
+              <li class="nav__sublistitem">
+                <a href="index.html#art">art</a>
+              </li>
+              <li class="nav__sublistitem">
+                <a href="index.html#music">music</a>
+              </li>
             </ul>
-        </div>
-    
-        <div class="maintenance__disclaimer">
-            <p class="maintenane__disclaimerparagraph">
-                This website is currently undergoing maintenance
-            </p>
-        </div>
-
-        <div class="maintenance__social">
-            <ul class="maintenance__sociallist">
-                <li class="maintenance__socialitem">
-                    <a href="https://twitter.com/amaryllis_no" class="maintenance__sociallink"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="maintenance__socialitem">
-                    <a href="https://open.spotify.com/artist/5suuQjUs3ukUoEKCPiwWAX?si=ZKLllcnZTVyw540e8vQL9g" class="maintenance__sociallink"><i class="fab fa-spotify"></i></a>
-                </li>
-                <li class="maintenance__socialitem">
-                    <a href="https://amaryllisno.bandcamp.com/" class="maintenance__sociallink"><i class="fab fa-bandcamp"></i></a>
-                </li>
-                <li class="maintenance__socialitem">
-                    <a href="https://www.facebook.com/amaryllisno" class="maintenance__sociallink"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li class="maintenance__socialitem">
-                    <a href="https://www.instagram.com/amaryllis_no/" class="maintenance__sociallink"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li class="maintenance__socialitem">
-                    <a href="https://soundcloud.com/amaryllis_no" class="maintenance__sociallink"><i class="fab fa-soundcloud"></i></a>
-                </li>
+          </li>
+          <li class="nav__listitem">
+            <a class="nav__mainlink" id="mobilemainlink-about">About</a>
+            <ul class="nav__sublist" id="mobileaboutlist">
+              <li class="nav__sublistitem">
+                <a href="about.html">About Me</a>
+              </li>
+              <li class="nav__sublistitem">
+                <a href="index.html#logos-branding">CV</a>
+              </li>
             </ul>
-        </div>
+          </li>
+          <li class="nav__listitem">
+            <a href="contact.html" class="nav__mainlink">Contact</a>
+          </li>
+        </ul>
+        <footer class="footer">
+          <small class="footer__copyright"
+            >©2021 Amaryllis. All rights reserved.
+          </small>
+        </footer>
+        <button class="anchorbar__arrow" id="anchorbararrow">
+          <img
+            src="./assets/svg/downarrow.svg"
+            alt="down arrow"
+            class="anchorbar__arrowimg"
+          />
+        </button>
+      </nav>
     </div>
 
-   
-</body>
+    <main class="main">
+      <div class="hero">
+        <div class="hero__left">
+          <img
+            src="./assets/img/amathirdgen.png"
+            alt="Amaryllis Icon"
+            class="hero__logo"
+          />
+        </div>
+        <div class="hero__right">
+          <h1 class="hero__heading">
+            <span class="dash dash--hero dash--condense"></span>
+            <span class="dash dash--hero"></span>Amaryllis
+          </h1>
+          <p class="hero__description">
+            Front-End Developer / Music Producer / Concept Artist / Graphic
+            Designer /
+          </p>
+        </div>
+      </div>
+
+      <section class="section worksection">
+        <div class="workcontainer">
+          <a href="#websites">
+            <h2 class="workcontainer__heading" id="websites">Websites</h2>
+          </a>
+          <p class="workcontainer__description">
+            Here are a featured collection of previous websites I've created.
+          </p>
+
+          <div class="workcontainer__contents">
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">E-commerce site (2020)</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <a
+                href="https://semesterproject2.amaryllis.cc"
+                class="workcontainer__worklink"
+              >
+                <img
+                  src="./assets/img/eccomerce-site2020.png"
+                  class="workcontainer__workimage"
+                  alt="e-commerce site 2020"
+                />
+              </a>
+            </div>
+
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">
+                previous portfolio (2019)
+              </h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <a
+                href="https://portfolio.amaryllis.cc"
+                class="workcontainer__worklink"
+              >
+                <img
+                  src="./assets/img/old-portfolio2019.png"
+                  class="workcontainer__workimage"
+                  alt="previous portfolio (2019)"
+                />
+              </a>
+            </div>
+
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Numetry Website (2019)</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <a
+                href="https://semesterproject1.amaryllis.cc"
+                class="workcontainer__worklink"
+              >
+                <img
+                  src="./assets/img/numetry2019.png"
+                  class="workcontainer__workimage"
+                  alt="numetry website"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="workcontainer workcontainer--x2height">
+          <h2 class="workcontainer__heading" id="logos-branding">
+            <a href="#logos-branding"> logos / branding</a>
+          </h2>
+
+          <p class="workcontainer__description">
+            Branding is an important aspect of every business. Here are some
+            graphics I've made for myself and others.
+          </p>
+          <div class="workcontainer__contents">
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Artist Logo</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/svg/work/resonance-logo-white.svg"
+                class="workcontainer__workimage workcontainer__workimage--smaller"
+                alt="resonance-logo-white"
+              />
+            </div>
+
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Tech/cyberpunk</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/svg/work/techy.svg"
+                class="workcontainer__workimage workcontainer__workimage--smaller"
+                alt="techy / cyberpunk design"
+              />
+            </div>
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">character logo</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/svg/work/amary-logo-black2.svg"
+                class="workcontainer__workimage workcontainer__workimage--smaller"
+                alt="character logo"
+              />
+            </div>
+          </div>
+          <div class="workcontainer__contents">
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Runic font</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/svg/work/bloodletter-font.svg"
+                class="workcontainer__workimage workcontainer__workimage--smaller"
+                alt="runic font"
+              />
+            </div>
+
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Amaryllis Logo</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/svg/work/amaryllis-text-logo.svg"
+                class="workcontainer__workimage workcontainer__workimage--smaller"
+                alt="amaryllis text logo"
+              />
+            </div>
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Amaryllis Icon</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/svg/work/amathirdgen.svg"
+                class="workcontainer__workimage workcontainer__workimage--smaller"
+                alt="amaryllis icon logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="workcontainer workcontainer--x2height workcontainer--art">
+          <a href="#art">
+            <h2 class="workcontainer__heading" id="art">Art</h2>
+          </a>
+          <p class="workcontainer__description">
+            Have a look at some of my artworks.
+          </p>
+          <div class="workcontainer__contents">
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Environment design</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/img/art/robby-fox-commission.png"
+                class="workcontainer__workimage imageoverlaybutton"
+                alt="e-commerce site 2020"
+              />
+            </div>
+
+            <div class="workcontainer__label">
+              <div class="workcontainer__worktitle"></div>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/img/art/BoxplotxAmaryllisCoverart1.png"
+                class="workcontainer__workimage imageoverlaybutton"
+                alt="e-commerce site 2020"
+              />
+            </div>
+            <div class="workcontainer__label">
+              <div class="workcontainer__worktitle"></div>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/img/art/AweShockCommission1.png"
+                class="workcontainer__workimage imageoverlaybutton"
+                alt="e-commerce site 2020"
+              />
+            </div>
+          </div>
+          <div class="workcontainer__contents">
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Character design</h3>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/img/art/amarytransparentillustration1.png"
+                class="workcontainer__workimage imageoverlaybutton"
+                alt="e-commerce site 2020"
+              />
+            </div>
+
+            <div class="workcontainer__label">
+              <div class="workcontainer__worktitle"></div>
+            </div>
+
+            <div class="workcontainer__work">
+              <img
+                src="./assets/img/art/amary-model-sheet.png"
+                class="workcontainer__workimage imageoverlaybutton"
+                alt="character model sheet"
+              />
+            </div>
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Prop design</h3>
+            </div>
+
+            <div class="workcontainer__work workcontainer__work--music">
+              <img
+                src="./assets/img/art/bloodletterdesign2020.png"
+                class="workcontainer__workimage workcontainer__workimage--sword imageoverlaybutton"
+                alt="sword design"
+              />
+            </div>
+          </div>
+          <div class="overlay">
+            <div class="overlay-inner">
+              <button class="close">Close X</button>
+              <img src="./" alt="placeholder" />
+            </div>
+          </div>
+        </div>
+
+        <div class="workcontainer">
+          <a href="#music">
+            <h2 class="workcontainer__heading" id="music">music</h2>
+          </a>
+          <p class="workcontainer__description">
+            I also produce music, mainly Drum & Bass.
+          </p>
+          <div class="workcontainer__contents">
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Light Pillars EP (2018)</h3>
+            </div>
+
+            <div class="workcontainer__work workcontainer__work--music">
+              <iframe
+                src="https://open.spotify.com/embed/album/4bRjM15cEvxaXbZHZKxeHx"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">Never Again EP (2016)</h3>
+            </div>
+
+            <div class="workcontainer__work workcontainer__work--music">
+              <iframe
+                src="https://open.spotify.com/embed/album/1VGtoOPitak3hLQhu6WLJD"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="workcontainer__label">
+              <h3 class="workcontainer__worktitle">December (2020)</h3>
+            </div>
+
+            <div class="workcontainer__work workcontainer__work--music">
+              <iframe
+                src="https://open.spotify.com/embed/album/0HXSayhZmSWpdCDVbBA0Rt"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom">
+        <img
+          src="./assets/svg/amaryllis-bottom-icon.svg"
+          class="bottom__icon"
+          alt="amaryllis icon small"
+        />
+      </div>
+    </main>
+
+    <script src="./js/script.js" type="module"></script>
+  </body>
 </html>

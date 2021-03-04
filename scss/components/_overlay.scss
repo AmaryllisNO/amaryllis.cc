@@ -1,0 +1,46 @@
+.overlay {
+  position: fixed;
+  background: rgba(39, 35, 43, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 99;
+}
+
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlay-inner {
+  background: rgb(35, 34, 44);
+  min-width: 600px;
+  padding: 0px;
+  position: relative;
+  opacity: 1;
+  display: flex;
+
+  & img {
+    object-fit: cover;
+    min-width: 500px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: #ffffff47;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.close:hover {
+  color: #ffffff;
+}

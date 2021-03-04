@@ -1,6 +1,6 @@
 /* imports */
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 
 /* reset styles */
 
@@ -38,6 +38,14 @@ a {
   }
 }
 
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  word-spacing: 1.6px;
+  line-height: 25px;
+  max-width: 670px;
+}
+
 img {
   max-width: 100%;
 }
@@ -47,8 +55,22 @@ button {
   margin: 0;
   padding: 0;
   height: auto;
+  border: none;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  cursor: pointer;
 }
 
 /* headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Amiri", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
 /* utils */

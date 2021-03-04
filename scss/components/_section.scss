@@ -1,0 +1,15 @@
+.section {
+  padding-left: $pageSpacing * 5;
+  padding-right: $pageSpacing * 5;
+
+  @media only screen and (max-width: 900px) {
+    padding-left: $pageSpacing * 2.8;
+    padding-right: $pageSpacing * 1.8;
+  }
+}
+
+.worksection {
+  @media only screen and (max-width: 900px) {
+    flex-wrap: wrap;
+  }
+}
